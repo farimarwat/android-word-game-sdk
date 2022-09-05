@@ -13,7 +13,7 @@ repositories {
 ```
 *1.2 (app module gradle)*
 ```
-	        implementation 'com.github.farimarwat:android-word-game-sdk:1.0'
+	        implementation 'com.github.farimarwat:android-word-game-sdk:1.1'
 ```
 
 ## Step 2:
