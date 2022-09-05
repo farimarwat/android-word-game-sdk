@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/wordgame2/app/src/main/res/drawable/bg_selected_letters.xml" value="0.14" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/wordgame2/app/src/main/res/drawable/bg_shuffle.xml" value="0.1385" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/wordgame2/app/src/main/res/drawable/button_background.xml" value="0.1" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/wordgame2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/wordgame2/app/src/main/res/layout/item_wordview.xml" value="0.203125" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/wordgame2/wordgamepad/src/main/res/drawable/bg_letter.xml" value="0.1" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/wordgame2/wordgamepad/src/main/res/layout/container.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/wordgame2/wordgamepad/src/main/res/layout/letter.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

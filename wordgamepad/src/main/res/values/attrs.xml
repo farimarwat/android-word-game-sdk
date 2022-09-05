@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PadView">
+        <attr name="pv_backgroundimage" format="reference"/>
+        <attr name="pv_buttonglowcolor" format="color"/>
+        <attr name="pv_buttoncolor" format="color"/>
+        <attr name="pv_buttonstrokecolor" format="color"/>
+        <attr name="pv_buttontextcolor" format="color"/>
+        <attr name="pv_draglinecolor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="GameWordView">
+        <attr name="gwv_word" format="string"/>
+        <attr name="gwv_boxsize" format="dimension"/>
+        <attr name="gwv_textsize" format="dimension"/>
+        <attr name="gwv_textcolor" format="color"/>
+        <attr name="gwv_backgrounddrawable" format="reference"/>
+    </declare-styleable>
+</resources>

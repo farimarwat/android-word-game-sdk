@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttonglow">#edbc98</color>
+    <color name="buttoncolor">#F3A76F</color>
+    <color name="buttonstrokecolor">#EB6605</color>
+    <color name="buttontextcolor">#EB6605</color>
+    <color name="draglinecolor">#EB6605</color>
+</resources>
