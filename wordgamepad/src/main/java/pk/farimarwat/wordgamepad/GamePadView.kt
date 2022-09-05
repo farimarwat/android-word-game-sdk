@@ -152,9 +152,9 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
     private fun initAttributes(context: Context, attr: AttributeSet) {
         mTa = context.theme.obtainStyledAttributes(
             attr,
-            R.styleable.PadView, 0, 0
+            R.styleable.GamePadView, 0, 0
         )
-        val background = mTa.getDrawable(R.styleable.PadView_pv_backgroundimage)
+        val background = mTa.getDrawable(R.styleable.GamePadView_pv_backgroundimage)
         if (background == null) {
             mBackground = BitmapFactory.decodeResource(context.resources, R.drawable.background)
         } else {
@@ -163,7 +163,7 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
 
 
         //Button Glow Color
-        val bgc = mTa.getColor(R.styleable.PadView_pv_buttonglowcolor, 0)
+        val bgc = mTa.getColor(R.styleable.GamePadView_pv_buttonglowcolor, 0)
         if (bgc != 0) {
             mButtonGlowColor = bgc
         } else {
@@ -171,7 +171,7 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
         }
 
         //Button  Color
-        val bc = mTa.getColor(R.styleable.PadView_pv_buttoncolor, 0)
+        val bc = mTa.getColor(R.styleable.GamePadView_pv_buttoncolor, 0)
         if (bc != 0) {
             mButtonColor = bc
         } else {
@@ -179,7 +179,7 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
         }
 
         //Button Stroke  Color
-        val bsc = mTa.getColor(R.styleable.PadView_pv_buttonstrokecolor, 0)
+        val bsc = mTa.getColor(R.styleable.GamePadView_pv_buttonstrokecolor, 0)
         if (bsc != 0) {
             mButtonStrokeColor = bsc
         } else {
@@ -187,14 +187,14 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
         }
 
         //Button Text  Color
-        val btc = mTa.getColor(R.styleable.PadView_pv_buttontextcolor, 0)
+        val btc = mTa.getColor(R.styleable.GamePadView_pv_buttontextcolor, 0)
         if (btc != 0) {
             mButtonTextColor = btc
         } else {
             mButtonTextColor = ContextCompat.getColor(mContext, R.color.buttontextcolor)
         }
         //Drag Line  Color
-        val dlc = mTa.getColor(R.styleable.PadView_pv_draglinecolor, 0)
+        val dlc = mTa.getColor(R.styleable.GamePadView_pv_draglinecolor, 0)
         if (dlc != 0) {
             mDragLineColor = dlc
         } else {

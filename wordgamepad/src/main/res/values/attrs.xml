@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="PadView">
+    <declare-styleable name="GamePadView">
         <attr name="pv_backgroundimage" format="reference"/>
         <attr name="pv_buttonglowcolor" format="color"/>
         <attr name="pv_buttoncolor" format="color"/>
