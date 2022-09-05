@@ -1,6 +1,6 @@
 # Android Word Game SDK
 Games like WordConnect, WordLink on google play store has high market value and can earn millions of dollers. So here I have decided to develop such SDK which can be implemented easily to develop  app like wordconnect in just few lines of code.
-<img src="wordgame.gif"/>
+<img src="wordgame.gif" width="300px" height="600"/>
 ## Step 1:
 Implement the SDK
 *1.1 (settings.gradle)*
