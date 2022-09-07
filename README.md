@@ -84,7 +84,7 @@ Create item_wordview.xml(name it as your desired) in layouts folder. We will inf
         />
 </RelativeLayout>
 ```
-Populate it using the same level which is create above:
+Populate it using the same level which is created above:
 ```
 for(answer in level.listanswers){
             val view = LayoutInflater.from(mContext)
