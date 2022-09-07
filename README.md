@@ -32,12 +32,12 @@ Place GamePadView in desired activity:
 ```
 Initialize the GamePadView and add Listener:
 ```
- val list = mutableListOf<String>()
-        list.add("pin")
-        list.add("ink")
-        list.add("nip")
-        list.add("pink")
-		binding.padview.setWordList(list)
+ val list_answers = mutableListOf<TAnswer>()
+        list_answers.add(TAnswer("CUP",false))
+        list_answers.add(TAnswer("UP",false))
+	
+        mTLevel = TLevel("UCP",list_answers)
+        binding.padview.setWordList(mTLevel)
         binding.padview.addListener(object :PadViewListener{
             override fun onLetterAdded(item: PadButton, selected: List<PadButton>?) {
                var word = ""
@@ -52,7 +52,7 @@ Initialize the GamePadView and add Listener:
                 }
             }
 
-            override fun onCompleted(list: List<PadButton>) {
+            override fun onDragCompleted(list: List<PadButton>) {
                 binding.txtSelectedLetters.visibility = View.GONE
                 if(list.isNotEmpty()){
                     var word = ""
@@ -84,9 +84,9 @@ Create item_wordview.xml(name it as your desired) in layouts folder. We will inf
         />
 </RelativeLayout>
 ```
-Populate it using the same word list:
+Populate it using the same level which is create above:
 ```
-for(word in list){
+for(answer in level.listanswers){
             val view = LayoutInflater.from(mContext)
                 .inflate(R.layout.item_wordview,null)
             val rl_container = view.findViewById<RelativeLayout>(R.id.container_wordview)
@@ -97,7 +97,7 @@ for(word in list){
             params.setMargins(10,10,10,10)
             rl_container.layoutParams = params
             val wordview = view.findViewById<GameWordView>(R.id.gamewordview)
-            wordview.setWord(word)
+            wordview.setWord(answer.answer)
             binding.containerWordview.addView(rl_container)
         }
 ```
