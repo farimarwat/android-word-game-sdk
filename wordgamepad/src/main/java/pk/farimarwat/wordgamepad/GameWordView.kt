@@ -37,8 +37,6 @@ class GameWordView constructor(context: Context, attrs: AttributeSet) :
 
     private fun initAttributes(attrs: AttributeSet) {
         val ta = context.obtainStyledAttributes(attrs, R.styleable.GameWordView)
-
-
         mBoxSize = ta.getDimensionPixelSize(R.styleable.GameWordView_gwv_boxsize, 0)
         if (mBoxSize < 1) {
             mBoxSize = resources.getDimensionPixelSize(R.dimen.letter_box_size)

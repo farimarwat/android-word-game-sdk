@@ -10,6 +10,7 @@ import android.view.MotionEvent
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
+import java.util.*
 
 
 class GamePadView constructor(context: Context, attrs: AttributeSet) : View(context, attrs) {
@@ -139,8 +140,9 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
                 }
                 MotionEvent.ACTION_UP -> {
                     mListLeters_Selected?.let {
-                        mPadViewListener?.onCompleted(it)
+                        mPadViewListener?.onDragCompleted(it)
                     }
+
                     resetAll()
                     invalidate()
                 }
@@ -324,7 +326,7 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
         var back = false
         mListLeters_Selected?.let { list ->
             val last = list[list.size - 2]
-            if (button.title.lowercase() == last.title.lowercase()) {
+            if (button.id == last.id) {
                 back = true
             }
         }
@@ -337,19 +339,17 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
     }
 
     //methods
-    fun setWordList(list: List<String>) {
+    fun setWordList(level:TLevel) {
         val list_letters = mutableListOf<Char>()
-        for (word in list) {
-            for (element in word.uppercase()) {
-                val char = element
-                list_letters.add(char)
-            }
+        for (element in level.word) {
+            val char = element
+            list_letters.add(char)
         }
-        val list_letters_final = list_letters.distinct()
 
-        for (element in list_letters_final) {
+        for (element in list_letters) {
             val letter = element
             val button = PadButton(
+                UUID.randomUUID().toString(),
                 letter, null
             )
             mListLetters.add(button)
@@ -359,8 +359,9 @@ class GamePadView constructor(context: Context, attrs: AttributeSet) : View(cont
         this.mPadViewListener = listener
     }
     fun shuffleLetters(){
+        Log.e("TEST","BeforeShuffle:${mListPoints}")
         mListPoints?.shuffle()
-        Log.e("TEST","${mListPoints}")
+        Log.e("TEST","AfterShuffle:${mListPoints}")
         invalidate()
     }
 

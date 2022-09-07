@@ -43,6 +43,7 @@
          />
 
     <RelativeLayout
+        android:id="@+id/img_shuffle"
         android:layout_width="32dp"
         android:layout_height="32dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +53,6 @@
         android:layout_margin="8dp"
         >
         <ImageView
-            android:id="@+id/img_shuffle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_shuffle_24"
