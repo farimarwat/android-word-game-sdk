@@ -103,6 +103,7 @@ for(answer in level.listanswers){
 ```
 # Thats it. Enjoy
 Sample app is included in the repository.
+200 game levels (TLevel) are also included in the project (wordconnect.db).
 
 ## GamePadView XML Attributes:
 |  Attribute |Details   |
