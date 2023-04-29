@@ -13,7 +13,7 @@ repositories {
 ```
 *1.2 (app module gradle)*
 ```
-	        implementation 'com.github.farimarwat:android-word-game-sdk:1.2'
+	        implementation 'com.github.farimarwat:android-word-game-sdk:1.3'
 ```
 
 ## Step 2:
@@ -124,3 +124,16 @@ Sample app is included in the repository.
 | gwv_textcolor  |  Letter color |
 | gwv_backgrounddrawable  | To change background of each letter  |
 
+### Change Log
+**1.3**
+
+Upgrade AGP 8.0
+Minor bugs fixed
+
+**1.2**
+
+Minor bugs fixed
+
+**1.0**
+
+Initial release
